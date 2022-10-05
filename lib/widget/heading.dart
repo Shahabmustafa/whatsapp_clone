@@ -9,7 +9,7 @@ class HeadingPage extends StatelessWidget {
     return Text(title!,
       style: TextStyle(
         color: Color(ColorStyle.fulgreen),
-        fontSize: 25.0,
+        fontSize: 20.0,
         fontWeight: FontWeight.w600,
       ),);
   }
