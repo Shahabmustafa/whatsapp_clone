@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/utils/color.dart';
 import 'package:whatsapp_clone/view/register_page.dart';
-import 'package:whatsapp_clone/view/home_page.dart';
+import 'package:whatsapp_clone/view/on_board_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class _SplashPageState extends State<SplashPage> {
     await Future.delayed(const Duration(milliseconds: 2500),(){});
     // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => RegisterPage()));
     // ignore: use_build_context_synchronously
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => OnBoardPage()));
 
   }
   @override

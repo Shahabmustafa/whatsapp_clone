@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "219706369559",
+    "firebase_url": "https://login-page-ad76c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "login-page-ad76c",
+    "storage_bucket": "login-page-ad76c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219706369559:android:37b603e8b53c51a94b5e52",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219706369559-5tqcarurpmg2pha0kr8j2tfp7fqop5vm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeF0SQIV5CJazBxUqIBYCAFNIqulRQeJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219706369559-5tqcarurpmg2pha0kr8j2tfp7fqop5vm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "219706369559-odq0gu0qlsmd8if3kd9rcrvnc3jrm42n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.untitled"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

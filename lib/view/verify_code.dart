@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_verification_code/flutter_verification_code.dart';
+import 'package:whatsapp_clone/view/home_screen.dart';
 import 'package:whatsapp_clone/widget/heading.dart';
 
 class VerifyCodePage extends StatefulWidget {
-  const VerifyCodePage({Key? key}) : super(key: key);
+  const VerifyCodePage({Key? key, required String verificationId}) : super(key: key);
 
   @override
   State<VerifyCodePage> createState() => _VerifyCodePageState();
@@ -32,7 +33,7 @@ class _VerifyCodePageState extends State<VerifyCodePage> {
                     ],
                   ),
                   SizedBox(height: 40.0,),
-                  Text('waiting to automatically detect an SMS sent to +123456789.',
+                  const Text('waiting to automatically detect an SMS sent to +123456789.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 17.0,
@@ -45,23 +46,25 @@ class _VerifyCodePageState extends State<VerifyCodePage> {
                         VerificationCode(
                             length: 6,
                             keyboardType: TextInputType.number,
-                            onCompleted: (value){},
+                            onCompleted: (value){
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+                            },
                             onEditing: (value){}
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20.0,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
+                          children: const [
                             Text('Enter 6-digits Code'),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20.0,
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Icon(Icons.message),
                             SizedBox(
                               width: 20.0,
@@ -72,11 +75,11 @@ class _VerifyCodePageState extends State<VerifyCodePage> {
                             ),)
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20.0,
                         ),
                         Row(
-                          children: [
+                          children: const [
                             Icon(Icons.phone),
                             SizedBox(
                               width: 20.0,
@@ -87,6 +90,7 @@ class _VerifyCodePageState extends State<VerifyCodePage> {
                               ),)
                           ],
                         ),
+
                       ],
                     ),
                   ),

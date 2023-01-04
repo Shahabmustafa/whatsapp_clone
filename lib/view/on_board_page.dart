@@ -3,14 +3,14 @@ import 'package:whatsapp_clone/utils/color.dart';
 import 'package:whatsapp_clone/view/register_page.dart';
 import 'package:whatsapp_clone/widget/heading.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class OnBoardPage extends StatefulWidget {
+  const OnBoardPage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<OnBoardPage> createState() => _OnBoardPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _OnBoardPageState extends State<OnBoardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
